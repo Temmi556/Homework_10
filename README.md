@@ -35,10 +35,9 @@ void name(int a) {
 
 
 void draw_two_squares(int a1, int a2, int overlap, char symbol) {
-    int size = a1 + overlap; // общий размер поля
+    int size = a1 + overlap; 
     for (int i = 0; i < size; i++) {
         for (int j = 0; j < size; j++) {
-            // рисуем границы квадратов
             if ((i < a1 && j < a1) || 
                 (i >= overlap && i < overlap + a2 && j >= overlap && j < overlap + a2)) {
                 printf("%c ", symbol);
